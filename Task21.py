@@ -6,12 +6,4 @@ h = int(input())
 a = int(input())
 b = int(input())
 
-i = h // (a - b)
-ii = h % (a - b)
-
-if h == a:
-    print(1)
-elif ii == 0:
-    print(i)
-else:
-    print(i + 1)
+print(int((h - b) // (a - b)))
