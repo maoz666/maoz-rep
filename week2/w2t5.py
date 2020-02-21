@@ -8,7 +8,7 @@ lin1 = int(input())
 col2 = int(input())
 lin2 = int(input())
 
-if col1 - col2 > 1 and lin2 - lin1 > 1:
+if abs(col1 - col2) > 1 or abs(lin1 - lin2) > 1:
     print('NO')
 elif col1 == col2 and lin1 == lin2:
     print('NO')
