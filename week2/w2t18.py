@@ -10,27 +10,21 @@ a2 = int(input())
 b2 = int(input())
 c2 = int(input())
 
-if (a1 == a1 and b1 == b2 and c1 == c2) or (
+if (a1, b1, c1, a2, b2, c2) <= (0, 0, 0, 0, 0, 0):
+    print('Boxes are incomparable')
+elif (a1 == a2 and b1 == b2 and c1 == c2) or (
         a1 == a2 and b1 == c2 and c1 == b2) or (
-        a1 == b2 and b1 == a1 and c1 == c2) or (
-        a1 == b2 and b1 == c2 and c1 == a1) or (
-        a1 == c2 and b2 == a1 and c1 == b2) or (
+        a1 == b2 and b1 == a2 and c1 == c2) or (
+        a1 == b2 and b1 == c2 and c1 == a2) or (
+        a1 == c2 and b2 == a2 and c1 == b2) or (
         a1 == c2 and b1 == b2 and c1 == a2):
     print('Boxes are equal')
-elif (a1 < a1 and b1 < b2 and c1 < c2) or (
-        a1 < a2 and b1 < c2 and c1 < b2) or (
-        a1 < b2 and b1 < a1 and c1 < c2) or (
-        a1 < b2 and b1 < c2 and c1 < a1) or (
-        a1 < c2 and b2 < a1 and c1 < b2) or (
-        a1 < c2 and b1 < b2 and c1 < a2):
+elif (a1 <= a2 and b1 <= b2 and c1 <= c2) or (
+        a1 <= a2 and b1 <= c2 and c1 <= b2) or (
+        a1 <= b2 and b1 <= a2 and c1 <= c2) or (
+        a1 <= b2 and b1 <= c2 and c1 <= a2) or (
+        a1 <= c2 and b2 <= a2 and c1 <= b2) or (
+        a1 <= c2 and b1 <= b2 and c1 <= a2):
     print('The first box is smaller than the second one')
-elif (a1 > a1 and b1 > b2 and c1 > c2) or (
-        a1 > a2 and b1 > c2 and c1 > b2) or (
-        a1 > b2 and b1 > a1 and c1 > c2) or (
-        a1 > b2 and b1 > c2 and c1 > a1) or (
-        a1 > c2 and b2 > a1 and c1 > b2) or (
-        a1 > c2 and b1 > b2 and c1 > a2):
-    print('The first box is larger than the second one')
 else:
-    print('Boxes are incomparable')
-    
+    print('The first box is larger than the second one')
