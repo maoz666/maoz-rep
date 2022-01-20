@@ -9,4 +9,5 @@ b = int(input())
 c = int(input())
 d = int(input())
 
+x=-b/a
 
