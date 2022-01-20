@@ -2,10 +2,9 @@
 Определите значение наибольшего элемента последовательности.'''
 
 i = int(input())
-m = 0
+m = i
 while i != 0:
+    i = int(input())
     if i > m:
         m = i
-        i = int(input())
-    i = int(input())
 print(m)
