@@ -1,10 +1,10 @@
 '''Последовательность состоит из целых чисел и завершается числом 0.
 Определите значение наибольшего элемента последовательности.'''
 
-i = int(input())
-m = i
-while i != 0:
-    i = int(input())
-    if i > m:
-        m = i
-print(m)
+now = int(input())
+max = now
+while now != 0:
+    if now > max:
+        max = now
+    now = int(input())
+print(max)
